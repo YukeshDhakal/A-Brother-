@@ -17,12 +17,7 @@
     horizontalOffset: 0,
 	  verticalOffset: 0
   });
-	document.querySelector('.slider-arrow').addEventListener('click', function() {
-    window.scrollTo({
-        top: window.innerHeight,  // Scroll down by one viewport height
-        behavior: 'smooth'
-    });
-});
+
 
 
   // Scrollax
