@@ -1,3 +1,22 @@
+body, html {
+  overflow: visible;
+  height: auto; /* Allow flexible height */
+}
+.carousel {
+  position: relative;
+  max-height: 500px; /* Set a reasonable max height */
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    max-height: 300px; /* Adjust for smaller screens */
+  }
+}
+.carousel-item img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Prevent distortion */
+}
 
 :root {
   --blue: #007bff;
