@@ -8971,3 +8971,26 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+  /* Adjust the height of the carousel */
+  .carousel {
+    max-height: 500px; /* Adjust the max height */
+    overflow: hidden;  /* Ensures no overflow of content */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    /* Smaller screen adjustments */
+    .carousel {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .carousel {
+      max-height: 200px;
+    }
+  }
